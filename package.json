@@ -1,0 +1,38 @@
+{
+  "name": "node-ups",
+  "version": "1.0.0",
+  "description": "UPS Shipping API client for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robincsamuel/node-ups.git"
+  },
+  "keywords": [
+    "UPS",
+    "SDK",
+    "Node.js",
+    "UPS",
+    "API",
+    "UPS",
+    "JSON",
+    "API"
+  ],
+  "author": "Robin C Samuel <hi@robinz.in>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robincsamuel/node-ups/issues"
+  },
+  "homepage": "https://github.com/robincsamuel/node-ups#readme",
+  "prettier": {
+    "printWidth": 80,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
