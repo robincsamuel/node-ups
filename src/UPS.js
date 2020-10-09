@@ -54,7 +54,10 @@ class UPS {
     });
 
     if (!response.ok) {
-      throw response.statusText;
+      const error = new Error(response.statusText);
+      const UPSError = await response.json();
+      Object.assign(error, { UPSError });
+      throw error;
     }
 
     const result = await response.json();
