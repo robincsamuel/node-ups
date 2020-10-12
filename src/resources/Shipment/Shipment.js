@@ -8,6 +8,11 @@ class Shipment extends Resource {
     const endpoint = `${this.basePath}/shipments`;
     return this.client.request(endpoint, payload);
   }
+
+  async label(payload) {
+    const endpoint = `${this.basePath}/shipments/labels`;
+    return this.client.request(endpoint, payload);
+  }
 }
 
 module.exports = Shipment;
