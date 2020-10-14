@@ -5,7 +5,7 @@ Javascript client for UPS JSON apis.
 
 ## Usage
 
-```
+```javascript
 const UPS = require('node-ups');
 
 const ups = new UPS({
