@@ -13,6 +13,11 @@ class Shipment extends Resource {
     const endpoint = `${this.basePath}/shipments/labels`;
     return this.client.request(endpoint, payload);
   }
+
+  async cancel(shipmentId, payload) {
+    const endpoint = `${this.basePath}/shipments/cancel/${shipmentId}`;
+    return this.client.request(endpoint, payload, { method: 'DELETE' });
+  }
 }
 
 module.exports = Shipment;
